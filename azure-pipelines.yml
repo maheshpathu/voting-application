@@ -55,6 +55,10 @@ stages:
   - job: update
     displayName: update
     steps:
+    - script: 
+        sudo apt -y update
+        sudo apt-get install dos2unix
+        dos2unix  update/k8manifestfile.sh
     - task: ShellScript@2
       inputs:
         scriptPath: 'update/k8manifestfile.sh'
