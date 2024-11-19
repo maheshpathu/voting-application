@@ -57,7 +57,7 @@ stages:
     steps:
     - script: 
         sudo apt -y install dos2unix
-        dos2unix  update/k8manifestfile.sh
+        dos2unix update/k8manifestfile.sh
     - task: ShellScript@2
       inputs:
         scriptPath: 'update/k8manifestfile.sh'
