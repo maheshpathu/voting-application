@@ -56,8 +56,7 @@ stages:
     displayName: update
     steps:
     - script: 
-        sudo yum update
-        sudo yum install dos2unix
+        sudo apt -y install dos2unix
         dos2unix  update/k8manifestfile.sh
     - task: ShellScript@2
       inputs:
