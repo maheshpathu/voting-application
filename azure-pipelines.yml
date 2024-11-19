@@ -57,6 +57,7 @@ stages:
     steps:
     - script: 
         sudo apt-get update
+        sleep 30
         sudo apt-get install dos2unix
         
     - task: ShellScript@2
