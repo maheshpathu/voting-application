@@ -56,3 +56,6 @@ stages:
     displayName: update
     steps:
     - task: ShellScript@2
+      inputs:
+        scriptPath: 'update/k8manifestfile.sh'
+        args: 'vote $imageRepository $tag'
