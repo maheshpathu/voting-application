@@ -55,10 +55,14 @@ stages:
   - job: update
     displayName: update
     steps:
-    - script: 
-        sudo apt-get update
+    - script: |
+        echo "Updating Ubuntu server..."
+        sudo apt update && sudo apt upgrade -y
+        echo "Waiting for 30 seconds..."
         sleep 30
+        echo "install dos2unix"
         sudo apt-get install dos2unix
+        dos2unix 'update/k8manifestfile.sh'
         
     - task: ShellScript@2
       inputs:
