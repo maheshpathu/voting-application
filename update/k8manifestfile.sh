@@ -1,8 +1,5 @@
 #!/bin/bash
 
-sudo apt-get install dos2unix
-
-dos2unix k8manifestfile.sh // script file name
 
 set -x
 
