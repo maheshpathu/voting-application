@@ -15,7 +15,7 @@ variables:
   dockerRegistryServiceConnection: 'dc78cb08-1293-4d1f-8811-6f04b423b3d1'
   imageRepository: 'voteapp'
   containerRegistry: 'maheshazure.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/result/Dockerfile'
+  dockerfilePath: '$(Build.SourcesDirectory)/vote/Dockerfile'
   tag: '$(Build.BuildId)'
 
 pool:
