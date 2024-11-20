@@ -15,7 +15,7 @@ spec:
         app: vote
     spec:
       containers:
-      - image: maheshazure.azurecr.io/voteapp:39
+      - image: maheshazure.azurecr.io/voteapp:42
         name: vote
         ports:
         - containerPort: 80
