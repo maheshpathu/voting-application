@@ -13,7 +13,7 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'dc78cb08-1293-4d1f-8811-6f04b423b3d1'
-  imageRepository: 'resultapp'
+  imageRepository: 'voteapp'
   containerRegistry: 'maheshazure.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/result/Dockerfile'
   tag: '$(Build.BuildId)'
