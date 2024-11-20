@@ -49,3 +49,22 @@ stages:
         repository: '$(imageRepository)'
         command: 'push'
         tags: '$(tag)'
+- stage: update
+  displayName: update
+  jobs:
+  - job: update
+    displayName: update
+    steps:
+    - script: |
+        echo "Updating Ubuntu server..."
+        sudo apt update && sudo apt upgrade -y
+        echo "Waiting for 30 seconds..."
+        sleep 30
+        echo "install dos2unix"
+        sudo apt-get install dos2unix
+        dos2unix 'update/k8manifestfile.sh'
+        
+    - task: ShellScript@2
+      inputs:
+        scriptPath: 'update/k8manifestfile.sh'
+        args: 'vote $(imageRepository) $(tag)'     
