@@ -15,7 +15,7 @@ spec:
         app: vote
     spec:
       containers:
-      - image:maheshazure/resultapp:34
+      - image:maheshazure/voteapp:35
         name: vote
         ports:
         - containerPort: 80
