@@ -6,7 +6,7 @@ import random
 import json
 import logging
 
-option_a = os.getenv('OPTION_A', "kub")
+option_a = os.getenv('OPTION_A', "Kub")
 option_b = os.getenv('OPTION_B', "Docker")
 hostname = socket.gethostname()
 
