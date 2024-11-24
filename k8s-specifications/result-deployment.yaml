@@ -15,7 +15,7 @@ spec:
         app: result
     spec:
       containers:
-      - image: maheshazure.azurecr.io/resultapp:55
+      - image: maheshazure.azurecr.io/resultapp:56
         name: result
         ports:
         - containerPort: 80
