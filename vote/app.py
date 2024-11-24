@@ -6,8 +6,8 @@ import random
 import json
 import logging
 
-option_a = os.getenv('OPTION_A', "sun")
-option_b = os.getenv('OPTION_B', "moon")
+option_a = os.getenv('OPTION_A', "kubernets")
+option_b = os.getenv('OPTION_B', "Docker swam")
 hostname = socket.gethostname()
 
 app = Flask(__name__)
